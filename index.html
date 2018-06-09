@@ -4,31 +4,40 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:300,400" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Daily UI - 006 User Profile</title>
 </head>
 <body>
 	<div id="card">
-		<div class="coverPhoto">
-			<img src="assets/king2.jpg" alt="King | Pitbull Mix" class="coverPhoto">
+			<div class="coverPhoto">
+				<img src="assets/king2.jpg" alt="King | Pitbull Mix" class="coverPhoto photo">
+			</div>
+		<div id="fave">
+			<p id="heart">&#9825</p>
 		</div>
-	<div class="fave">
-		<p>&#9825</p>
+		<h1 id="name">King</h1>
+		<div class="userInfo">
+			<p class="userInfo breed"><span>Breed</span>Pitbull, Terrier</p>
+			<p class="userInfo gender"><span>Gender</span>Male</p>
+			<p class="userInfo age"><span>Age</span>6 months</p>
+			<p class="userInfo size"><span>Size</span>Medium</p>
+		</div>
+		<div class="friendlyIcons">
+			<ul class="friendlyIcons">	
+				<li class="friendlyIcons dogFriendly">
+					<img src="assets/dog-icon.svg" alt="This dog is dog friendly">
+				</li>
+				<li class="friendlyIcons catFriendly">
+					<img src="assets/cat-icon.svg" alt="This dog is cat friendly">
+				</li>
+				<li class="friendlyIcons kidFriendly">
+					<img src="assets/kid-icon.svg" alt="This dog is kid friendly">
+				</li>
+			</ul>
+		</div>	
+		<div class="btn heart"></div>
 	</div>
-	<h1 id="name">King</h1>
-	<div class="userInfo">
-		<p class="userInfo breed"><span>Breed</span>Pitbull, Terrier</p>
-		<p class="userInfo gender"><span>Gender</span>Male</p>
-		<p class="userInfo age"><span>Age</span>6 months</p>
-		<p class="userInfo size"><span>Size</span>Medium</p>
-	</div>
-	<div class="friendlyIcons">
-		<ul class="friendlyIcons">	
-			<li class="friendlyIcons dogFriendly">Dog</li>
-			<li class="friendlyIcons catFriendly">Cat</li>
-			<li class="friendlyIcons kidFriendly">Kid</div>
-		</ul>
-	</div>	
-	<div class="btn heart"></div>
-	</div>
+	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
