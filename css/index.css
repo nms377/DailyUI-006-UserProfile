@@ -1,85 +1,140 @@
-html, body {
+body, html {
 	height: 100%;
 }
 
 #card {
-	background-color: pink;
+	/*background-color: pink;*/
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(6, auto);
+	grid-template-rows: repeat(8, auto);
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
 }
 
 .coverPhoto {
-	border: 2px solid black;
 	width: 100%;
 	grid-column: 1/5;
 	grid-row: 1/7;
+	box-sizing: border-box;
+	margin-bottom: -0.10rem;
 }
 
-.coverPhoto > img {
-	height: 100%;
-}
-
-.fave {
-	border: 2px dotted yellow;
+#fave {
 	grid-column: 4/5;
 	grid-row: 1/2;
-	color: rgb(255, 255, 255);
+	justify-self: end;
+	box-sizing: border-box;
+	padding: .75rem .75rem 0 0;
+	font-size: 1.5rem;
+	color: rgba(255, 255, 255, 0.60);
+	cursor: pointer;
 }
 
 #name {
-	background: rgba(0, 0, 0, 0.5);
-	color: rgb(225, 225, 225);
 	grid-column: 1/5;
-	grid-row: 5;
+	grid-row: 6;
+	padding: .75rem 0 1rem 1rem;
 	font-size: 4rem;
 	letter-spacing: .125rem;
-	padding: .75rem 0 1rem 1rem;
+	font-family: 'Playfair Display', serif;
+	color: rgb(225, 225, 225);
+	background: rgba(0, 0, 0, 0.75);
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 }
 
 div.userInfo {
-	border: 2px dashed blue;
+	/*border: 2px dashed blue;*/
+	background-color: rgba(0, 0, 0, 0.90);
 	grid-column: 1/5;
-	grid-row: 6;
+	grid-row: 7;
+	display: grid;
+	grid-row-gap: 1rem;
+	box-sizing: border-box;
+	padding-top: 1rem;
+	font-size: 1.25rem;
+	letter-spacing: 0.125rem;
+	color: rgb(255, 255, 255);
+}
+
+p.userInfo {
+	display: grid;
+	grid-template-columns: 35% 1fr;
+}
+
+p.userInfo {
+	font-size: 1.25rem;
+	font-weight: 300;
+}
+
+p.userInfo > span {
+	font-weight: bold;
+	/*border: 2px solid blue;*/
+	justify-self: end;
+	padding-right: 1.75rem;
 }
 
 .breed {
-	background-color: white;
+	/*background-color: white;*/
 }
 
 .gender {
-	background-color: yellow;
+	/*background-color: yellow;*/
 }
 
 .age {
-	background-color: lime;
+	/*background-color: lime;*/
 }
 
 .size {
-	background-color: orange;
+	/*background-color: orange;*/
 }
 
 div.friendlyIcons {
-	border: 2px solid white;
-	grid-column: 4/5;
-	grid-row: 6;
+	/*border: 2px solid white;*/
+	background-color: rgba(0, 0, 0, 0.90);
+	grid-column: 1/5;
+	grid-row: 8;
+	box-sizing: border-box;
+	padding: 2rem 0;
 }
 
 ul.friendlyIcons {
-	background-color: red;
+	/*background-color: red;*/
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.dogFriendly, .catFriendly, .kidFriendly {
+	justify-self: center;
+	/*border-radius: 50%;*/
+	/*padding: 1rem 1rem;*/
+	/*background-color: rgb(255, 255, 255);*/
+	font-size: 1rem;
 }
 
 .dogFriendly {
-	border: 2px dashed lime;
+	/*border: 2px dashed lime;*/
+	grid-column: 1/2;
+	padding: 1rem 0.50rem;
+}
+
+.dogFriendly > img,
+.catFriendly > img,
+.kidFriendly > img {
+	height: 29px;
+	width: 29px;
 }
 
 .catFriendly {
-	border: 2px dotted powderblue;
+	/*border: 2px dotted powderblue;*/
+	grid-column: 2/3;
+	padding: 1rem 0.50rem;
 }
 
 .kidFriendly {
-	border: 2px solid purple;
+	/*border: 2px solid purple;*/
+	grid-column: 3/4;
+	padding: 1rem 0.50rem;
 }
