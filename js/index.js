@@ -14,7 +14,7 @@ function favorite() {
 		}
 	});
 
-	var whiteHeart = document.getElementById('heart');
+	var whiteHeart = document.getElementById('whiteHeart');
 	whiteHeart.addEventListener("click", function() {
 		if (whiteHeart.style.display = "block") {
 			whiteHeart.style.display = "none";
